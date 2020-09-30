@@ -1,21 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WinSwitcher = void 0;
+exports.checkStoredWindow = exports.getActiveWindowTitle = exports.activateStoredWindow = exports.storeActiveWindow = void 0;
 const winswitcher = require("../build/release/rinku_winswitcher.node");
-class WinSwitcher {
-    constructor() { }
-    ;
-    storeActiveWindow() {
-        return winswitcher.storeActiveWindow();
-    }
-    activateStoredWindow() {
-        return winswitcher.activateStoredWindow();
-    }
-    static getActiveWindowTitle() {
-        return winswitcher.getCurrentActiveWindowTitle();
-    }
-    checkStoredWindow() {
-        return winswitcher.checkStoredWindow();
-    }
+function storeActiveWindow() {
+    return winswitcher.storeActiveWindow();
 }
-exports.WinSwitcher = WinSwitcher;
+exports.storeActiveWindow = storeActiveWindow;
+function activateStoredWindow() {
+    return winswitcher.activateStoredWindow();
+}
+exports.activateStoredWindow = activateStoredWindow;
+function getActiveWindowTitle() {
+    return winswitcher.getCurrentActiveWindowTitle();
+}
+exports.getActiveWindowTitle = getActiveWindowTitle;
+function checkStoredWindow() {
+    return winswitcher.checkStoredWindow();
+}
+exports.checkStoredWindow = checkStoredWindow;
