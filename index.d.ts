@@ -23,4 +23,4 @@ declare class WinManager {
     checkStoredWindow(): String;
 }
 
-export = WinManager;
+export default WinManager;
