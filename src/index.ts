@@ -1,19 +1,21 @@
+/// <reference path="../index.d.ts" />
+
 const winswitcher = require("../build/release/rinku_winswitcher.node");
 
-class WinSwitcher {
-    constructor() {};
-    storeActiveWindow(): string {
-        return winswitcher.storeActiveWindow();
-    }
-    activateStoredWindow(): string {
-        return winswitcher.activateStoredWindow();
-    }
-    static getActiveWindowTitle(): string {
-        return winswitcher.getCurrentActiveWindowTitle();
-    }
-    checkStoredWindow(): string {
-        return winswitcher.checkStoredWindow();
-    }
+function storeActiveWindow(): string {
+    return winswitcher.storeActiveWindow();
 }
 
-export = WinSwitcher;
+function activateStoredWindow(): string {
+    return winswitcher.activateStoredWindow();
+}
+
+function getActiveWindowTitle(): string {
+    return winswitcher.getCurrentActiveWindowTitle();
+}
+
+function checkStoredWindow(): string {
+    return winswitcher.checkStoredWindow();
+}
+
+export { storeActiveWindow, activateStoredWindow, getActiveWindowTitle, checkStoredWindow };

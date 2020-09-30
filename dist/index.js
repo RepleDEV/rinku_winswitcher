@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.WinSwitcher = void 0;
 const winswitcher = require("../build/release/rinku_winswitcher.node");
 class WinSwitcher {
     constructor() { }
@@ -16,4 +18,4 @@ class WinSwitcher {
         return winswitcher.checkStoredWindow();
     }
 }
-module.exports = WinSwitcher;
+exports.WinSwitcher = WinSwitcher;
