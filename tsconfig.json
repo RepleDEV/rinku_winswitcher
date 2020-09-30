@@ -6,7 +6,9 @@
         "esModuleInterop": true,
         "baseUrl": ".",
         "outDir": "dist/",
-        "target": "ESNext"
+        "target": "ESNext",
+        "types": ["node"],
+        "moduleResolution": "node"
     },
     "include": ["src/**/*", "index.d.ts"],
     "exclude": ["node_modules", "build"]
