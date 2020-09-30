@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
+        "module": "CommonJS",
         "allowJs": true,
         "removeComments": true,
+        "esModuleInterop": true,
         "baseUrl": ".",
         "outDir": "./",
         "target": "ESNext"

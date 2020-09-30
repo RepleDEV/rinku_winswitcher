@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A3C18D09-A31F-A391-A14A-BB72F2D4AF5D}</ProjectGuid>
+    <ProjectGuid>{C3618CF1-91C0-088E-96DC-1699C9CC9801}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>rinku_winswitcher</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>

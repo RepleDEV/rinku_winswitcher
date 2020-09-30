@@ -1,6 +1,9 @@
 /// <reference types="node" />
 
-declare class WinManager {
+/**
+ * Window Switcher class.
+ */
+declare class WinSwitcher {
     /**
      * Class Constructor
      */
@@ -16,11 +19,11 @@ declare class WinManager {
     /**
      * Gets current active window's title.
      */
-    getActiveWindowTitle(): String;
+    static getActiveWindowTitle(): String;
     /**
      * Check the title of the stored window (if there's any).
      */
     checkStoredWindow(): String;
 }
 
-export default WinManager;
+export = WinSwitcher;

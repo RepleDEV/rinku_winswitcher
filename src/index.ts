@@ -1,6 +1,6 @@
-const winswitcher = require('../build/release/rinku_winswitcher.node');
+const winswitcher = require("");
 
-export default class WinSwitcher {
+class WinSwitcher {
     constructor() { }
     storeActiveWindow(): String {
         return winswitcher.storeActiveWindow();
@@ -8,10 +8,12 @@ export default class WinSwitcher {
     activateStoredWindow(): String {
         return winswitcher.activateStoredWindow();
     }
-    getActiveWindowTitle(): String {
+    static getActiveWindowTitle(): String {
         return winswitcher.getCurrentActiveWindowTitle();
     }
     checkStoredWindow(): String {
         return winswitcher.checkStoredWindow();
     }
 }
+
+export = WinSwitcher;
