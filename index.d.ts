@@ -26,4 +26,4 @@ declare class WinSwitcher {
     checkStoredWindow(): String;
 }
 
-export = WinSwitcher;
+export default WinSwitcher;

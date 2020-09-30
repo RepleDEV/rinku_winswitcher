@@ -5,7 +5,7 @@
         "removeComments": true,
         "esModuleInterop": true,
         "baseUrl": ".",
-        "outDir": "./",
+        "outDir": "dist/",
         "target": "ESNext"
     },
     "include": ["src/**/*", "index.d.ts"],

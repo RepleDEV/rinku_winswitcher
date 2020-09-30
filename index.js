@@ -1,18 +1,3 @@
-"use strict";
-const winswitcher = require("");
-class WinSwitcher {
-    constructor() { }
-    storeActiveWindow() {
-        return winswitcher.storeActiveWindow();
-    }
-    activateStoredWindow() {
-        return winswitcher.activateStoredWindow();
-    }
-    static getActiveWindowTitle() {
-        return winswitcher.getCurrentActiveWindowTitle();
-    }
-    checkStoredWindow() {
-        return winswitcher.checkStoredWindow();
-    }
-}
+const WinSwitcher = require('./dist');
+
 module.exports = WinSwitcher;

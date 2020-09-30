@@ -1,19 +1,19 @@
+"use strict";
 const winswitcher = require("../build/release/rinku_winswitcher.node");
-
 class WinSwitcher {
-    constructor() {};
-    storeActiveWindow(): string {
+    constructor() { }
+    ;
+    storeActiveWindow() {
         return winswitcher.storeActiveWindow();
     }
-    activateStoredWindow(): string {
+    activateStoredWindow() {
         return winswitcher.activateStoredWindow();
     }
-    static getActiveWindowTitle(): string {
+    static getActiveWindowTitle() {
         return winswitcher.getCurrentActiveWindowTitle();
     }
-    checkStoredWindow(): string {
+    checkStoredWindow() {
         return winswitcher.checkStoredWindow();
     }
 }
-
-export = WinSwitcher;
+module.exports = WinSwitcher;
