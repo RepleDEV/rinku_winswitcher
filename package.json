@@ -1,5 +1,5 @@
 {
-  "name": "@repledev/rinku_winswitcher",
+  "name": "@rinku/windowswitcher",
   "version": "1.0.4",
   "description": "Window Switcher for Rinku",
   "main": "index.js",
