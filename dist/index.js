@@ -5,7 +5,7 @@ let winswitcher;
 (function main() {
     try {
         const { platform } = process;
-        winswitcher = require(`../build/Release/rinku_winswitcher-${platform}`);
+        winswitcher = require(`../build/Release/rinku_winswitcher_${platform}`);
     }
     catch (err) {
         console.error("Unsupported Platform! All primary functions won't work!");
