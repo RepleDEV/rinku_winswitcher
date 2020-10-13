@@ -8,14 +8,14 @@ let winswitcher;
         const { platform } = process;
         winswitcher = require(`../build/Release/rinku_winswitcher-${platform}`);
     } catch (err) {
-        throw new Error("Unsupported Platform! All primary functions won't work!");
+        console.error("Unsupported Platform! All primary functions won't work!");
     }
 })()
 
 
 function storeActiveWindow(): string {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
 
     return winswitcher.storeActiveWindow();
@@ -23,7 +23,7 @@ function storeActiveWindow(): string {
 
 function activateStoredWindow(): string {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
 
     return winswitcher.activateStoredWindow();
@@ -31,7 +31,7 @@ function activateStoredWindow(): string {
 
 function getActiveWindowTitle(): string {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
 
     return winswitcher.getCurrentActiveWindowTitle();
@@ -39,7 +39,7 @@ function getActiveWindowTitle(): string {
 
 function checkStoredWindow(): string {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
     
     return winswitcher.checkStoredWindow();

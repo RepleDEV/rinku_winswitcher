@@ -1,6 +1,6 @@
 {
   "name": "@repledev/rinku_winswitcher",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Window Switcher for Rinku",
   "main": "index.js",
   "gypfile": true,

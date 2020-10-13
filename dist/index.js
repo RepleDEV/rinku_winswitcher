@@ -8,33 +8,33 @@ let winswitcher;
         winswitcher = require(`../build/Release/rinku_winswitcher-${platform}`);
     }
     catch (err) {
-        throw new Error("Unsupported Platform! All primary functions won't work!");
+        console.error("Unsupported Platform! All primary functions won't work!");
     }
 })();
 function storeActiveWindow() {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
     return winswitcher.storeActiveWindow();
 }
 exports.storeActiveWindow = storeActiveWindow;
 function activateStoredWindow() {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
     return winswitcher.activateStoredWindow();
 }
 exports.activateStoredWindow = activateStoredWindow;
 function getActiveWindowTitle() {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
     return winswitcher.getCurrentActiveWindowTitle();
 }
 exports.getActiveWindowTitle = getActiveWindowTitle;
 function checkStoredWindow() {
     if (winswitcher === undefined) {
-        throw new Error("Unsupported Platform!");
+        return "Unsupported Platform!";
     }
     return winswitcher.checkStoredWindow();
 }
