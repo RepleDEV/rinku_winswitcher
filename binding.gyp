@@ -8,7 +8,7 @@
                 }
             ]
         }],
-        ['os=="linux"', {
+        ['OS=="linux"', {
             "targets": [
                 {
                     "target_name": "rinku_winswitcher-linux",

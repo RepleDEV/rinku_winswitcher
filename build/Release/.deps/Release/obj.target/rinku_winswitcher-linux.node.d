@@ -1,0 +1,1 @@
+cmd_Release/obj.target/rinku_winswitcher-linux.node := g++ -o Release/obj.target/rinku_winswitcher-linux.node -shared -pthread -rdynamic -m64  -Wl,-soname=rinku_winswitcher-linux.node -Wl,--start-group Release/obj.target/rinku_winswitcher-linux/lib/linux.o -Wl,--end-group 

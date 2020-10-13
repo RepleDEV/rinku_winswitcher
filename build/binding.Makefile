@@ -3,4 +3,4 @@
 export builddir_name ?= ./build/.
 .PHONY: all
 all:
-	$(MAKE) rinku_winswitcher
+	$(MAKE) rinku_winswitcher-linux
