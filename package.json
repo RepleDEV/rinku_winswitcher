@@ -5,13 +5,15 @@
   "main": "index.js",
   "gypfile": true,
   "compiled": "October 13th 2020",
+  "platforms": [
+    "win32"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-gyp rebuild",
     "ts-build": "tsc",
     "ts-watch": "tsc -w",
     "build-all": "node-gyp rebuild && tsc",
-    "install": "exit 0",
     "postinstall": "tsc",
     "prepublishOnly": "tsc && node-gyp rebuild"
   },

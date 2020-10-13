@@ -1,31 +1,40 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkStoredWindow = exports.getActiveWindowTitle = exports.activateStoredWindow = exports.storeActiveWindow = void 0;
-const winswitcher = require("../build/release/rinku_winswitcher.node");
+let winswitcher;
+(function main() {
+    try {
+        const { platform } = process;
+        winswitcher = require(`../build/Release/rinku_winswitcher-${platform}`);
+    }
+    catch (err) {
+        throw new Error("Unsupported Platform! All primary functions won't work!");
+    }
+})();
 function storeActiveWindow() {
-    if (process.platform != "win32") {
-        throw new Error("Unsupported Platform");
+    if (winswitcher === undefined) {
+        throw new Error("Unsupported Platform!");
     }
     return winswitcher.storeActiveWindow();
 }
 exports.storeActiveWindow = storeActiveWindow;
 function activateStoredWindow() {
-    if (process.platform != "win32") {
-        throw new Error("Unsupported Platform");
+    if (winswitcher === undefined) {
+        throw new Error("Unsupported Platform!");
     }
     return winswitcher.activateStoredWindow();
 }
 exports.activateStoredWindow = activateStoredWindow;
 function getActiveWindowTitle() {
-    if (process.platform != "win32") {
-        throw new Error("Unsupported Platform");
+    if (winswitcher === undefined) {
+        throw new Error("Unsupported Platform!");
     }
     return winswitcher.getCurrentActiveWindowTitle();
 }
 exports.getActiveWindowTitle = getActiveWindowTitle;
 function checkStoredWindow() {
-    if (process.platform != "win32") {
-        throw new Error("Unsupported Platform");
+    if (winswitcher === undefined) {
+        throw new Error("Unsupported Platform!");
     }
     return winswitcher.checkStoredWindow();
 }

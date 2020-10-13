@@ -75,7 +75,7 @@
     "want_separate_host_toolset": 0,
     "nodedir": "/home/void/.cache/node-gyp/14.13.1",
     "standalone_static_library": 1,
-    "access": "public",
+    "access": "",
     "timing": "",
     "save_dev": "",
     "sign_git_tag": "",
