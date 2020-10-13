@@ -4,7 +4,7 @@
   "description": "Window Switcher for Rinku",
   "main": "index.js",
   "gypfile": true,
-  "compiled": "September 30th 2020",
+  "compiled": "October 13th 2020",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node-gyp rebuild",
