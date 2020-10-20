@@ -1,10 +1,16 @@
 ## WinSwitcher
-This module's current purpose is to store the current active window's HWND data,  
+This module's current purpose is to store the current active window's data,  
 and to be able to re-focus that window later on.  
   
 May expand to an actually useful module.
 
 This is a module for the project: [Rinku](https://github.com/repledev/rinku).
+
+## Platforms
+Currently supported platforms:
+- Windows
+
+**Will log an error if the platform is unsupported!**
 
 ## Setup
 
